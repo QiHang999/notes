@@ -17,7 +17,7 @@ export default defineConfigWithTheme({
   appearance: 'force-dark',
   themeConfig: {
     lastUpdated: {
-      text: '最后一次更新于：',
+      text: '最后一次更新于',
       formatOptions: {
         dateStyle: 'full',
         timeStyle: 'medium'
@@ -29,7 +29,7 @@ export default defineConfigWithTheme({
     },
     editLink: {
       pattern: 'https://github.com/QiHang999/notes/tree/master/docs/:path',
-      text: '在 gitee 上编辑此页'
+      text: '在 github 上编辑此页'
     },
     search: {
       provider: 'local',
