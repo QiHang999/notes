@@ -6,6 +6,7 @@ import escookConfig from '@escook/vitepress-theme/config'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfigWithTheme({
+  base: '/notes/',
   lang: 'zh-CN',
   lastUpdated: true,
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
@@ -27,7 +28,7 @@ export default defineConfigWithTheme({
       next: '下一页'
     },
     editLink: {
-      pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
+      pattern: 'https://github.com/QiHang999/notes/tree/master/docs/:path',
       text: '在 gitee 上编辑此页'
     },
     search: {
@@ -132,7 +133,7 @@ export default defineConfigWithTheme({
       label: '页面导航'
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/QiHang999/notes' }
     ],
     footer: {
       message: '🐋 ’▾‘🐋',
