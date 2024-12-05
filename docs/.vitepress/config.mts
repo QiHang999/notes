@@ -9,7 +9,7 @@ export default defineConfigWithTheme({
   base: '/notes/',
   lang: 'zh-CN',
   lastUpdated: true,
-  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+  head: [['link', { rel: 'icon', href: '/notes/favicon.ico' }]],
   // 3. 通过 extends 指定要继承的配置
   extends: escookConfig,
   title: "航航笔记",
@@ -59,7 +59,7 @@ export default defineConfigWithTheme({
     confetti: true,
     // 5. 通过此配置项，启用背景音乐的小组件
     musicBall: {
-      src: '/20241203.mp3',
+      src: '/notes/20241203.mp3',
       autoplay: true,
       loop: true
     },
@@ -76,7 +76,7 @@ export default defineConfigWithTheme({
       '/note/': [
         {
           text: 'JavaScript',
-          collapsed: true,
+          collapsed: false,
           items: [
             { text: 'JS中apply、call和bind的区别', link: '/note/javascript/js-note1' },
             { text: 'JS 中的闭包是什么', link: '/note/javascript/js-note2' },
@@ -88,21 +88,21 @@ export default defineConfigWithTheme({
         },
         {
           text: 'Css',
-          collapsed: true,
+          collapsed: false,
           items: [
-            { text: 'CSS下的buttn（一）', link: '/note/css/css-note1' }
+            { text: 'CSS下的 Button（一）', link: '/note/css/css-note1' }
           ]
         },
         {
           text: '函数&类',
-          collapsed: true,
+          collapsed: false,
           items: [
             { text: '箭头函数与普通函数的区别 ', link: '/note/func/func-note1' }
           ]
         },
         {
           text: '文章',
-          collapsed: true,
+          collapsed: false,
           items: [
             { text: 'ES6的新语法与特性总结(一)', link: '/note/art/art-note1' }
           ]
@@ -120,10 +120,39 @@ export default defineConfigWithTheme({
       ],
       '/py/': [
         {
-          text: 'Python基础',
-          collapsed: true,
+          text: 'Python 基础',
+          collapsed: false,
           items: [
             { text: 'Python简介', link: '/py/basic/' },
+            { text: 'Python3 基础语法', link: '/py/basic/basic-note1' },
+          ]
+        },
+        {
+          text: 'Python 内置函数',
+          collapsed: false,
+          items: [
+            { text: 'Python3 round() 函数', link: '/py/innerFunc/' },
+          ]
+        },
+        {
+          text: 'Python 内置库',
+          collapsed: false,
+          items: [
+            { text: 'Python3 randrange() 函数', link: '/py/innerLib/' },
+          ]
+        },
+        {
+          text: 'Python Math模块',
+          collapsed: false,
+          items: [
+            { text: 'Python3 math.e常量', link: '/py/mathModule/' },
+          ]
+        },
+        {
+          text: 'Python 第三方库',
+          collapsed: false,
+          items: [
+            { text: 'Python的http库request', link: '/py/outerLib/' },
           ]
         }
       ],
@@ -137,7 +166,7 @@ export default defineConfigWithTheme({
     ],
     footer: {
       message: '🐋 ’▾‘🐋',
-      copyright: 'Copyright © 2022-present 启航'
+      copyright: 'Copyright © 2022-2025 启航'
     }
   },
   vite: {
